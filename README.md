@@ -1,2 +1,2 @@
-# Tech-Academy-C--Large
-Tech Academy project folder for larger C# projects
+# Tech-Academy-.Net-Large
+Tech Academy project folder for larger C#/.NET projects
