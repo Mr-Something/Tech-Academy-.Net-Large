@@ -1,0 +1,14 @@
+﻿@using Car_Ins_Quote_WebApp.Models
+
+@{ViewBag.Title = "Superquote Estimate";}
+
+<!--Page used to display the user's personalized quote after they successfully fill out the GetQuote form.-->
+
+<h2>Thanks! Here's your S U P E R Q U O T E:</h2>
+
+<!--var ins references the object newQuote from class InsuranceQuotes, noted in GetQuote method on HomeController.-->
+@{ var ins = (InsuranceQuote)ViewData["MyQuote"];}
+
+<div class="container">
+    <p>Your estimated insurance is @ins.FinalQuote per month.</p>
+</div>

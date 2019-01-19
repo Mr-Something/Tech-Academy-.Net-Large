@@ -1,0 +1,32 @@
+﻿@using Car_Ins_Quote_WebApp.Models
+@model List<InsuranceQuote>
+
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto">
+        <div class="card-header text-center">
+            <!--S U P E R Q U O T E S S S S S S S S S S S
+                EVEN BETTER THAN REGULAR QUOTES-->
+            <h4>SUPERQUOTES</h4>
+        </div>
+        <!--For each user who successfully filled out an insurance quote form, prints that user's first and last name, email, and their estimate.-->
+        <div class="card-body">
+            @foreach (var quote in Model)
+            {
+            <div class="row">
+                <div class="col">
+                    @quote.FirstName
+                </div>
+                <div class="col">
+                    @quote.LastName
+                </div>
+                <div class="col">
+                    @quote.EmailAddress
+                </div>
+                <div class="col">
+                    @quote.FinalQuote
+                </div>
+            </div>
+            }  
+        </div>
+    </div>
+</div>
